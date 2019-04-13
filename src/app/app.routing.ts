@@ -1,8 +1,10 @@
+import { ModuleWithProviders } from '@angular/core';
+
 import { AboutComponent } from './components/about/about.component';
 
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [
+export const AppRoutes: Routes = [
   {
     path: '',
     redirectTo: '/about',
@@ -14,4 +16,4 @@ const routes: Routes = [
   },
 ];
 
-export const AppRoutes = RouterModule.forChild(routes);
+export const Routing: ModuleWithProviders = RouterModule.forRoot(AppRoutes);
