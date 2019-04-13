@@ -14,7 +14,9 @@ import { AboutComponent } from './components/about/about.component';
    ],
    providers: [],
    bootstrap: [
-      AppComponent
+      AppComponent,
+      AboutComponent
    ]
 })
+
 export class AppModule { }
