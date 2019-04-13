@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppComponent } from './components/app/app.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
    declarations: [
       AppComponent,
-      SidebarComponent
+      AboutComponent
    ],
    imports: [
       BrowserModule
