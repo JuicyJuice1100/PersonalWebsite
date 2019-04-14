@@ -18,4 +18,4 @@ const about = new NavigationItem();
 
 
 
-export const NavigationConfig: Array<NavigationItem> =  [ about ];
+export const NavigationConfig: Array<NavigationItem> =  [ home, about ];
