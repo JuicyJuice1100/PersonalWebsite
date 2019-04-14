@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { UserConfig } from '../../config/user.config';
 import { DocumentRefService } from '../../services/documentRef.service';
@@ -9,7 +9,7 @@ import { DocumentRefService } from '../../services/documentRef.service';
   styleUrls: ['./about.component.scss']
 })
 
-export class AboutComponent implements OnInit, AfterViewChecked {
+export class AboutComponent implements OnInit {
 
   public longDescription: String = UserConfig.about.longDescription;
   public shotDescription: String = UserConfig.about.shortDescription;
@@ -24,11 +24,11 @@ export class AboutComponent implements OnInit, AfterViewChecked {
     this.titleService.setTitle('About - Justin L. Espiritu');
   }
 
-  ngAfterViewChecked() {
-    const el  = this.docRef.nativeElement.getElementById('aboutLongDescription');
+  // ngAfterViewChecked() {
+  //   const el  = this.docRef.nativeElement.getElementById('aboutLongDescription');
 
-    if (el !== null && el !== undefined) {
-      el.innerHTML = this.longDescription;
-    }
-  }
+  //   if (el !== null && el !== undefined) {
+  //     el.innerHTML = this.longDescription;
+  //   }
+  // }
 }

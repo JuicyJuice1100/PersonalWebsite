@@ -1,15 +1,15 @@
 import { NavigationItem } from '../classes/navigation-item';
 
 const home = new NavigationItem();
-  home.icon = 'home'; //TODO: insert home icon
+  home.icon = 'home'; // TODO: insert home icon
   home.isMobile = true;
   home.route = '/home';
   home.title = 'Home';
   home.type = 'title';
-  home.url = 'http://www.juicyjuice1100.com/home'
+  home.url = 'http://www.juicyjuice1100.com/home';
 
 const about = new NavigationItem();
-  about.icon = 'about'; //TODO: insert about icon
+  about.icon = 'about'; // TODO: insert about icon
   about.isMobile = true;
   about.route = '/about';
   about.title = 'About';

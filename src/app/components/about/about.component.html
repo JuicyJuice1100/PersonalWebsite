@@ -2,8 +2,9 @@
 <div class="container">
   <div id="aboutDetailsGroup" class="flex-item"> <!-- TODO:  Create main view bio-->
     <h1>About</h1>
-    <p id="aboutLongDescription" class="appAbout"></p> <!-- TODO:  Create biography.  This will be injected-->
+    <p id="aboutLongDescription" class="appAbout">{{longDescription}}</p> <!-- TODO:  Create biography.  This will be injected-->
   </div>
+  <!-- TODO:  Debate to remove? -->
   <div class="flex-container"> <!-- TODO:  Create sidebar-->
     <div id=aboutOverviewGroup>
       <!-- <img /> TODO:  setup image-->
@@ -22,12 +23,13 @@
 
       <h2 id="aboutSocialMediaTitle">Social Media</h2>
       <ul id="aboutSocialMediaList" class="removeBullets">
-        <li *ngFor="let s of social">
+        <!-- <li *ngFor="let s of social">
           <i id="{{s.icon}}" aria-hidden="true"></i>
           <a id="aboutSocialMedia{{s.title}}" class="socialMedia" href="{{s.url}}">{{s.title}}</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
+  <!-- TODO:  Debate to remove? -->
 </div>
 <app-footer></app-footer>

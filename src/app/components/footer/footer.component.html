@@ -1,12 +1,19 @@
 <div id="footer" class="footer">
-    <p id="footerLeft" class="itemsLeft">
+    <!-- <p id="footerLeft" class="itemsLeft">
       <b>Justin L. Espiritu</b> | <a href="mailto:{{email}}">{{email}}</a>
-    </p>
-    <p id="footerRight" class="itemsRight">
+    </p> -->
+
+    <!-- <p id="footerRight" class="itemsRight">
       <span *ngFor="let s of social">
         <a id="footerSocial{{s.title}}" title="{{s.title}}" class="socialMedia" href="{{s.url}}">
           <i id="{{s.icon}}" aria-hidden="true"></i>
         </a>
       </span>
-    </p>
+    </p> -->
+    <mat-toolbar-row color="primary">
+      <a mat-flat-button href="mailto:{{email}}">Contact Me!</a>
+      <span class="spacer"></span>
+      <button mat-icon>
+      </button>
+    </mat-toolbar-row>
 </div>

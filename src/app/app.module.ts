@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { MatToolbarModule, MatButtonModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { Routing } from './app.routing';
@@ -18,14 +20,17 @@ import { DocumentRefService } from './services/documentRef.service';
       HomeComponent,
       AboutComponent,
       NavigationComponent,
-      FooterComponent
+      FooterComponent,
    ],
    imports: [
       BrowserModule,
+      BrowserAnimationsModule,
+      MatToolbarModule,
+      MatButtonModule,
       Routing
    ],
    providers: [
-    DocumentRefService
+      DocumentRefService
    ],
    bootstrap: [
       AppComponent

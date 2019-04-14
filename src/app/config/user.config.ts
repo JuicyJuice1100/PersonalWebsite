@@ -1,4 +1,9 @@
 export const UserConfig = {
+  home: {
+    welcomeMsg: 'What\'s Up I\'m',
+    name: 'Justin L. Espiritu',
+    nickName: 'You can call me, Juice'
+  },
   about: {
     longDescription: '<p>TODO:  Insert Long Description</p>',
     shortDescription: 'TODO:  Insert Short Description',
