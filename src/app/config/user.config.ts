@@ -1,6 +1,6 @@
-export class UserConfig {
+export const UserConfig = {
   about: {
-    longDescription: "",
-    shortDescription: ""
-  };
-}
+    longDescription: '<p>TODO:  Insert Long Description</p>',
+    shortDescription: 'TODO:  Insert Short Description'
+  }
+};

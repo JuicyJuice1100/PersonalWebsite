@@ -5,6 +5,7 @@ import { Routing } from './app.routing';
 
 import { AppComponent } from './components/app/app.component';
 import { AboutComponent } from './components/about/about.component';
+import { DocumentRefService } from './services/documentRef.service';
 
 @NgModule({
    declarations: [
@@ -15,10 +16,11 @@ import { AboutComponent } from './components/about/about.component';
       BrowserModule,
       Routing
    ],
-   providers: [],
+   providers: [
+    DocumentRefService
+   ],
    bootstrap: [
-      AppComponent,
-      AboutComponent
+      AppComponent
    ]
 })
 
