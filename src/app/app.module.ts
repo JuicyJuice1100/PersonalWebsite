@@ -6,6 +6,7 @@ import { Routing } from './app.routing';
 import { AppComponent } from './components/app/app.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 import { DocumentRefService } from './services/documentRef.service';
@@ -14,7 +15,8 @@ import { DocumentRefService } from './services/documentRef.service';
    declarations: [
       AppComponent,
       AboutComponent,
-      NavigationComponent
+      NavigationComponent,
+      FooterComponent
    ],
    imports: [
       BrowserModule,
