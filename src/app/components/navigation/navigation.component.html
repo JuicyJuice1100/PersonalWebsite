@@ -1,7 +1,7 @@
 <!-- STATE: Navigation if the application is not mobile -->
 <span *ngIf="!displayMobileView">
-    <div id="navigation--toolbar-desktop" class="navigation--container-toolbar">
-      <div id="navigation--toolbar-list-desktop" *ngFor="let item of desktopNavigationItemList" class="desktop">
+    <div id="navigationToolbarDesktop" class="navigationContainerToolbar">
+      <div id="navigationToolbarListDesktop" *ngFor="let item of desktopNavigationItemList" class="desktop">
         <a class="{{item.type}}" routerLink={{item.route}} routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:false}">
           <span>{{item.title}}</span>
         </a>
@@ -11,16 +11,16 @@
 
   <!-- STATE: Navigation if the application is mobile -->
   <span *ngIf="displayMobileView">
-    <div id="navigation--toolbar-mobile" class="navigation--container-toolbar">
-      <div id="navigation--toolbar-list-mobile" *ngFor="let item of mobileNavigationItemList" class="mobile">
+    <div id="navigationToolbarMobile" class="navigationContainerToolbar">
+      <div id="navigationToolbarListMobile" *ngFor="let item of mobileNavigationItemList" class="mobile">
         <a class="{{item.type}}" routerLink={{item.route}} routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:false}">
           <span>{{item.title}}</span>
         </a>
       </div>
     </div>
 
-    <div id="navigation--tab-bar" class="navigation--container-tab-bar">
-      <div id="navigation--tab-bar-list" *ngFor="let item of desktopNavigationItemList" class="nav-item">
+    <div id="navigationTabBar" class="navigationContainerTabBar">
+      <div id="navigationTabBarList" *ngFor="let item of desktopNavigationItemList" class="navItem">
         <a class="{{item.type}}" title="{{item.title}}" routerLink={{item.route}} routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:false}">
           <i class="fa fa-{{item.icon}}" aria-hidden="true"></i>
         </a>
