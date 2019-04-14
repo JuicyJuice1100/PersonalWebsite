@@ -13,7 +13,10 @@ export class AboutComponent implements OnInit, AfterViewChecked {
 
   public longDescription: String = UserConfig.about.longDescription;
   public shotDescription: String = UserConfig.about.shortDescription;
-
+  public email: String = UserConfig.about.email;
+  public location: String = UserConfig.about.location;
+  public job: String = UserConfig.about.job;
+  public social: Array<Object> = UserConfig.social;
 
   constructor(private titleService: Title, private docRef: DocumentRefService) { }
 

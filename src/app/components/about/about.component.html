@@ -1,10 +1,31 @@
 <app-navigation></app-navigation>
 <div class="container">
-  <div class="flex-item"> <!-- TODO:  Create main view bio-->
+  <div id="aboutDetailsGroup" class="flex-item"> <!-- TODO:  Create main view bio-->
     <h1>About</h1>
     <p id="aboutLongDescription" class="appAbout"></p> <!-- TODO:  Create biography.  This will be injected-->
   </div>
   <div class="flex-container"> <!-- TODO:  Create sidebar-->
+    <div id=aboutOverviewGroup>
+      <!-- <img /> TODO:  setup image-->
+      <h2 id="aboutOverviewTitle">Overview</h2>
+      <ul class="removeBullets">
+        <li>
+          <span id="aboutJob">{{job}}</span>
+        </li>
+        <li>
+          <span id="aboutLocation">{{location}}</span>
+        </li>
+        <li>
+          <a id="aboutEmail" href="mailto:{{email}}">{{email}}</a>
+        </li>
+      </ul>
 
+      <h2 id="aboutSocialMediaTitle">Social Media</h2>
+      <ul id="aboutSocialMediaList" class="removeBullets">
+        <li *ngFor="let s of social">
+          <a id="aboutSocialMedia{{s.title}}" class="socialMedia" href="{{s.url}}">{{s.title}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
