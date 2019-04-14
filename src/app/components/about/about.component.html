@@ -23,6 +23,7 @@
       <h2 id="aboutSocialMediaTitle">Social Media</h2>
       <ul id="aboutSocialMediaList" class="removeBullets">
         <li *ngFor="let s of social">
+          <i id="{{s.icon}}" aria-hidden="true"></i>
           <a id="aboutSocialMedia{{s.title}}" class="socialMedia" href="{{s.url}}">{{s.title}}</a>
         </li>
       </ul>
