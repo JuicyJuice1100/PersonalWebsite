@@ -15,3 +15,7 @@
   padding-bottom: $navbar--height;
 }
 
+body {
+  background-color: map-get($accent, A700)
+}
+
