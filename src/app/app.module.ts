@@ -12,7 +12,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 import { DocumentRefService } from './services/documentRef.service';
 
@@ -22,6 +22,7 @@ import { DocumentRefService } from './services/documentRef.service';
       HomeComponent,
       AboutComponent,
       NavigationComponent,
+      PortfolioComponent,
       FooterComponent,
    ],
    imports: [

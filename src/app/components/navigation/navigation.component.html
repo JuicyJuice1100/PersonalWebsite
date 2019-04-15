@@ -1,9 +1,11 @@
 <!-- STATE: Navigation if the application is not mobile -->
-<span *ngIf="!displayMobileView">
-    <mat-toolbar-row class="primary navigationContainerToolbar" *ngFor="let item of desktopNavigationItemList">
-        <a mat-button [routerLink]=item.route>{{item.title}}</a>
+<mat-toolbar *ngIf="!displayMobileView" id="navigationBar" class="primary">
+    <mat-toolbar-row class="navigationContainerToolbar">
+        <span *ngFor="let item of desktopNavigationItemList">
+            <a mat-button [routerLink]=item.route>{{item.title}}</a>
+        </span>
     </mat-toolbar-row>
-</span>
+</mat-toolbar>
 
 
 
