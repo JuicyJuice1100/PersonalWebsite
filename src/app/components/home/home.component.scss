@@ -1,0 +1,15 @@
+// ****************************************************************************
+// Local styles
+// ****************************************************************************
+@import '../../../style-helpers/colors';
+@import '../../../style-helpers/fonts';
+@import '../../../style-helpers/viewportHelper';
+
+#homeIntro{
+  font-size: $font-size--xtra-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  color: $dark-gray;
+}
