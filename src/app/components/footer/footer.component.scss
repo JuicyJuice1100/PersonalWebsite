@@ -1,7 +1,26 @@
+// ****************************************************************************
+// Local styles
+// ****************************************************************************
+@import '../../../style-helpers/colors';
+@import '../../../style-helpers/fonts';
+@import '../../../style-helpers/viewportHelper';
+
 .spacer {
   flex: 1 1 auto;
 }
 
 .footerIcons {
   margin: 8px;
+  color: map-get($primary, 700);
+}
+
+#footerBar{
+  max-width: 100vw !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: $container--padding-right;
+  padding-left: $container--padding-left;
+  height: $footer--height;
+  display: flex;
+  align-items: center;
 }

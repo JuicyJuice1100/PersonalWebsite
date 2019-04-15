@@ -1,7 +1,8 @@
-<mat-toolbar id="footer" class="footer">
-  <mat-toolbar-row color="primary">
+<div id="footer" class="footerBar">
+  <mat-toolbar-row>
     <a href="mailto:{{email}}">
-      <i class="fas fa-envelope"></i>
+      <i class="fa fa-envelope footerIcons">
+      </i>
     </a>
     <span class="spacer"></span>
     <span *ngFor="let s of social">
@@ -10,4 +11,4 @@
       </a>
     </span>
   </mat-toolbar-row>
-</mat-toolbar>
+</div>
