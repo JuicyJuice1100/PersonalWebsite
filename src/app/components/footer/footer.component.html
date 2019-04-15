@@ -13,7 +13,10 @@
     <mat-toolbar-row color="primary">
       <a mat-flat-button href="mailto:{{email}}">Contact Me!</a>
       <span class="spacer"></span>
-      <button mat-icon>
-      </button>
+      <span *ngFor="let s of social">
+        <a [id]="s.title" [title]="s.title" [href]="s.url">
+          <i [class]="s.icon"></i>
+        </a>
+      </span>
     </mat-toolbar-row>
 </div>

@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { MatToolbarModule, MatButtonModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatIconModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { Routing } from './app.routing';
 
@@ -25,8 +27,10 @@ import { DocumentRefService } from './services/documentRef.service';
    imports: [
       BrowserModule,
       BrowserAnimationsModule,
+      FontAwesomeModule,
       MatToolbarModule,
       MatButtonModule,
+      MatIconModule,
       Routing
    ],
    providers: [
