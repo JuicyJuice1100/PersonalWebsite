@@ -45,3 +45,8 @@
   flex: 1 1 auto;
 }
 
+.toolbar--hover-grow {
+  transition: all .2s ease-in-out;
+    &:hover { transform: scale(1.2); }
+}
+
