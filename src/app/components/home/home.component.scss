@@ -5,11 +5,18 @@
 @import '../../../style-helpers/fonts';
 @import '../../../style-helpers/viewportHelper';
 
-#homeIntro{
+.container--routing-home{
   font-size: $font-size--xtra-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
   color: $dark-gray;
+  cursor: default;
+}
+
+.title--hover-green {
+  &:hover{
+    color: map-get($primary, 2);
+  }
 }

@@ -9,7 +9,7 @@ import { UserConfig } from '../../config/user.config';
 export class FooterComponent implements OnInit {
   name: String;
   email: String;
-  social: Object[];
+  social: Array<any>;
 
   constructor() {
     this.name = UserConfig.home.name;

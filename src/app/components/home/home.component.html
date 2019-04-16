@@ -1,9 +1,9 @@
 <app-navigation></app-navigation>
-<div id="homeIntroContainer" class="container">
-  <div id="homeIntro">
+<div class="container container--routing-home">
     <!-- <p id="welcomeMsg">{{welcomeMsg}}</p> -->
-    <p id="name">{{name}}</p>
-    <p id="title">{{title}}</p>
-  </div>
+    <p>{{name}}</p>
+    <p *ngFor="let t of titles">
+      <span [class]="t.class">{{t.title}}</span>
+    </p>
 </div>
 <app-footer></app-footer>

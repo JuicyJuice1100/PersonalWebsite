@@ -1,10 +1,10 @@
 <!-- STATE: Navigation if the application is not mobile -->
-<mat-toolbar *ngIf="!displayMobileView" id="navigationBar">
-    <mat-toolbar-row class="navigationContainerToolbar">
-        <span *ngFor="let item of desktopNavigationItemList">
+<mat-toolbar *ngIf="!displayMobileView" class="container--routing-navigation">
+    <mat-toolbar-row class="container--toolbar">
+        <span *ngFor="let item of desktopNavigationItemList" class="toolbar--item">
             <a mat-button [routerLink]=item.route>{{item.title}}</a>
         </span>
-        <span class="spacer"></span>
+        <span class="navigation--spacer"></span>
         <!-- TODO:  Insert Theme change -->
     </mat-toolbar-row>
 </mat-toolbar>

@@ -9,7 +9,7 @@
 // ****************************************************************************
 // App Header
 // ****************************************************************************
-#navigationBar{
+.container--routing-navigation{
   z-index: 1000 !important;
   position: fixed;
   // top: $toolbar--height !important;
@@ -35,3 +35,8 @@
     color: map-get($primary, 2);
   }
 }
+
+.navigation--spacer {
+  flex: 1 1 auto;
+}
+

@@ -2,10 +2,11 @@ export const UserConfig = {
   home: {
     welcomeMsg: 'What\'s Up I\'m',
     name: 'Justin L. Espiritu',
-    title: 'Developer | Gamer | Rockclimber'
-    // titles: [
-    //   {title: 'Developer', color: 'get'}
-    // ]
+    // title: 'Developer | Gamer | Rockclimber',
+    titles: [
+      { title: 'Developer', class: 'title--hover-green' }
+    ],
+    seperator: '|'
   },
   about: {
     longDescription: '<p>TODO:  Insert Long Description</p>',
