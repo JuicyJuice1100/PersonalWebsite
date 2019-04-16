@@ -4,9 +4,10 @@ export const UserConfig = {
     name: 'Justin L. Espiritu',
     // title: 'Developer | Gamer | Rockclimber',
     titles: [
-      { title: 'Developer', class: 'title--hover-green' }
-    ],
-    seperator: '|'
+      { title: 'Developer', class: 'title--hover-green' },
+      { title: 'Gamer', class: 'title--hover-red' },
+      { title: 'Rock Climber', class: 'title--hover-yellow' }
+    ]
   },
   about: {
     longDescription: '<p>TODO:  Insert Long Description</p>',

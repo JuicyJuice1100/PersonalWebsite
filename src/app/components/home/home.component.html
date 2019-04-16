@@ -2,8 +2,8 @@
 <div class="container container--routing-home">
     <!-- <p id="welcomeMsg">{{welcomeMsg}}</p> -->
     <p>{{name}}</p>
-    <p *ngFor="let t of titles">
+    <div class="container--title" *ngFor="let t of titles">
       <span [class]="t.class">{{t.title}}</span>
-    </p>
+    </div>
 </div>
 <app-footer></app-footer>
