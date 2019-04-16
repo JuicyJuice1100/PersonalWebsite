@@ -5,4 +5,5 @@ export class NavigationItem {
   public type: String;
   public icon: String;
   public isMobile: Boolean;
+  public id: String;
 }

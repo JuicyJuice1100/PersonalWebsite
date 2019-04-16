@@ -9,7 +9,7 @@
 // ****************************************************************************
 // App Header
 // ****************************************************************************
-.container--routing-navigation{
+.container--routing-navigation {
   z-index: 1000 !important;
   position: fixed;
   // top: $toolbar--height !important;
@@ -29,8 +29,13 @@
   background-color: whitesmoke;
 }
 
-// //TODO: fix this.  I shouldn't have to color the button to avoid the hover
-.mat-button{
+#button--nav-home {
+  &:hover{
+    color: map-get($primary, 1);
+  }
+}
+
+#button--nav-about {
   &:hover{
     color: map-get($primary, 2);
   }

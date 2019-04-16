@@ -7,6 +7,7 @@ const home = new NavigationItem();
   home.title = 'Home';
   home.type = 'title';
   home.url = 'http://www.juicyjuice1100.com/home';
+  home.id = 'button--nav-home';
 
 const about = new NavigationItem();
   about.icon = 'about'; // TODO: insert about icon
@@ -15,7 +16,6 @@ const about = new NavigationItem();
   about.title = 'About';
   about.type = 'title';
   about.url = 'http://www.juicyjuice1100.com/about';
-
-
+  about.id = 'button--nav-about';
 
 export const NavigationConfig: Array<NavigationItem> =  [ home, about ];
