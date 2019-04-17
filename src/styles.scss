@@ -1,6 +1,7 @@
 // ****************************************************************************
 // Local styles
 // ****************************************************************************
+@import './style-helpers/animation';
 @import './style-helpers/colors';
 @import './style-helpers/fonts';
 @import './style-helpers/viewportHelper';
@@ -15,7 +16,46 @@
   padding-bottom: $navbar--height;
 }
 
+
 body {
   background-color: whitesmoke
+  -webkit-scrollbar { width: 0 !important }
+}
+
+// ****************************************************************************
+// Global Hover Animations
+// ****************************************************************************
+
+.element--hover-green {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 2);
+  }
+}
+
+.element--hover-red {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 1);
+  }
+}
+
+.element--hover-blue {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 3);
+  }
+}
+
+.element--hover-yellow {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 4);
+  }
+}
+
+.element--hover-grow {
+  transition: $defaultTransition;
+    &:hover { transform: scale(1.1); }
 }
 

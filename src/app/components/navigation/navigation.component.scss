@@ -2,6 +2,7 @@
 // ****************************************************************************
 // Local styles
 // ****************************************************************************
+@import '../../../style-helpers/animation';
 @import '../../../style-helpers/colors';
 @import '../../../style-helpers/fonts';
 @import '../../../style-helpers/viewportHelper';
@@ -45,8 +46,8 @@
   flex: 1 1 auto;
 }
 
-.toolbar--hover-grow {
-  transition: all .2s ease-in-out;
-    &:hover { transform: scale(1.2); }
+.element--hover-grow {
+  transition: $defaultTransition;
+    &:hover { transform: scale(1.1); }
 }
 

@@ -1,6 +1,7 @@
 // ****************************************************************************
 // Local styles
 // ****************************************************************************
+@import '../../../style-helpers/animation';
 @import '../../../style-helpers/colors';
 @import '../../../style-helpers/fonts';
 @import '../../../style-helpers/viewportHelper';
@@ -12,6 +13,34 @@
 .footer--link {
   margin: 8px;
   color: $dark-gray;
+}
+
+.element--hover-green {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 2);
+  }
+}
+
+.element--hover-red {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 1);
+  }
+}
+
+.element--hover-blue {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 3);
+  }
+}
+
+.element--hover-yellow {
+  transition: $defaultTransition;
+  &:hover {
+    color: map-get($primary, 4);
+  }
 }
 
 .container--footer{
