@@ -1,8 +1,11 @@
 // tslint:disable: max-line-length
 export const UserConfig = {
-  home: {
-    welcomeMsg: 'What\'s Up I\'m',
+  info: {
+    email: 'Espiritu.L.Justin@gmail.com',
     name: 'Justin L. Espiritu',
+  },
+  home: {
+
     // title: 'Developer | Gamer | Rockclimber',
     titles: [
       { title: 'Developer', class: 'element--hover-blue' },
@@ -11,11 +14,15 @@ export const UserConfig = {
     ]
   },
   about: {
-    longDescription: '<p>TODO:  Insert Long Description</p>',
-    shortDescription: 'TODO:  Insert Short Description',
-    email: 'Espiritu.L.Justin@gmail.com',
+    welcomeMsg: 'Hey There!',
+    longDescription: [
+      'My name is Justin, but most people call me Juice.  I am a software developer who specializes in creating web applications.',
+      'On my freetime I love to continue improving my rockclimbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
+    ],
+  },
+  overview: {
     location: 'Oshkosh, WI',
-    job: 'Teamcenter Implementation Engineer @ Mercury Marine'
+    job: 'Teamcneter Inplmenetation Engineer @ Mercury Marine'
   },
   social: [
     { title: 'Github', url: 'https://github.com/juicyjuice1100/', icon: 'fab fa-github fa-2x', class: 'element--hover-green'},

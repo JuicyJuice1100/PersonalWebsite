@@ -10,12 +10,9 @@ import { DocumentRefService } from '../../services/documentRef.service';
 })
 
 export class AboutComponent implements OnInit {
-
-  public longDescription: String = UserConfig.about.longDescription;
-  public shotDescription: String = UserConfig.about.shortDescription;
+  public welcomeMsg: String = UserConfig.about.welcomeMsg;
+  public longDescription: Array<String> = UserConfig.about.longDescription;
   public email: String = UserConfig.about.email;
-  public location: String = UserConfig.about.location;
-  public job: String = UserConfig.about.job;
   public social: Array<Object> = UserConfig.social;
 
   constructor(private titleService: Title, private docRef: DocumentRefService) { }

@@ -1,1 +1,23 @@
+// ****************************************************************************
+// Local styles
+// ****************************************************************************
+@import '../../../style-helpers/animation';
+@import '../../../style-helpers/colors';
+@import '../../../style-helpers/fonts';
+@import '../../../style-helpers/viewportHelper';
 
+.container--row {
+  font-size: $font-size--large;
+  display: flex;
+  justify-content: center;
+  color: $dark-gray;
+  cursor: default;
+}
+
+.container--column {
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    flex-grow: 1.5;
+  }
+}

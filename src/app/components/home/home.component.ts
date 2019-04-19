@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
   public titles: Array<any>;
 
   constructor() {
-    this.welcomeMsg = UserConfig.home.welcomeMsg;
-    this.name = UserConfig.home.name;
+    this.name = UserConfig.info.name;
     this.titles = UserConfig.home.titles;
   }
 

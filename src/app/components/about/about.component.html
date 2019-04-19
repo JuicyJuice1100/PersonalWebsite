@@ -1,7 +1,13 @@
 <app-navigation></app-navigation>
-<div class="container container--routing-about">
-  <div class="block--flex-parent"> <!-- TODO:  Create main view bio-->
-    <p class="block--flex-child">{{longDescription}}</p> <!-- TODO:  Create biography.  This will be injected-->
+<div class="container container--row">
+  <div class="container--column">
+      <h1 class="heading--title">{{welcomeMsg}}</h1>
+      <div *ngFor="let p of longDescription"> <!-- TODO:  Create main view bio-->
+        <p>{{p}}</p> <!-- TODO:  Create biography.  This will be injected-->
+      </div>
+  </div>
+  <div class="container--column">
+    <app-overview></app-overview>
   </div>
 </div>
 <app-footer></app-footer>

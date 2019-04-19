@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { OverviewComponent } from './components/overview/overview.component';
 
 import { DocumentRefService } from './services/documentRef.service';
 
@@ -24,6 +25,7 @@ import { DocumentRefService } from './services/documentRef.service';
       NavigationComponent,
       PortfolioComponent,
       FooterComponent,
+      OverviewComponent
    ],
    imports: [
       BrowserModule,
