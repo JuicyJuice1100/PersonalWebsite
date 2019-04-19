@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserConfig } from '../../config/user.config';
 
 @Component({
   selector: 'app-overview',
