@@ -15,8 +15,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 import { DocumentRefService } from './services/documentRef.service';
+
 
 @NgModule({
    declarations: [
@@ -27,7 +29,8 @@ import { DocumentRefService } from './services/documentRef.service';
       PortfolioComponent,
       ContactComponent,
       FooterComponent,
-      OverviewComponent
+      OverviewComponent,
+      ResumeComponent
    ],
    imports: [
       BrowserModule,
