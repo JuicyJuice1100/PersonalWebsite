@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { OverviewComponent } from './components/overview/overview.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 import { DocumentRefService } from './services/documentRef.service';
 
@@ -24,6 +25,7 @@ import { DocumentRefService } from './services/documentRef.service';
       AboutComponent,
       NavigationComponent,
       PortfolioComponent,
+      ContactComponent,
       FooterComponent,
       OverviewComponent
    ],

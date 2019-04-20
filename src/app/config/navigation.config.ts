@@ -18,4 +18,22 @@ const about = new NavigationItem();
   about.url = 'http://www.juicyjuice1100.com/about';
   about.id = 'button--nav-about';
 
-export const NavigationConfig: Array<NavigationItem> =  [ home, about ];
+const portfolio = new NavigationItem();
+  portfolio.icon = 'portfolio';
+  portfolio.isMobile = true;
+  portfolio.route = '/portfolio';
+  portfolio.title = 'Resume';
+  portfolio.type = 'title';
+  portfolio.url = 'http://www.juicyjuice1100.com/portfolio';
+  portfolio.id = 'button--nav-portfolio';
+
+const contact = new NavigationItem();
+  contact.icon = 'contact';
+  contact.isMobile = true;
+  contact.route = '/contact';
+  contact.title = 'Contact';
+  contact.type = 'title';
+  contact.url = 'http://www.juicyjuice1100.com/contact';
+  contact.id = 'button--nav-contact';
+
+export const NavigationConfig: Array<NavigationItem> =  [ home, about, portfolio, contact ];

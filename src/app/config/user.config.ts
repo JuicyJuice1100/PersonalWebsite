@@ -3,10 +3,10 @@ export const UserConfig = {
   info: {
     email: 'Espiritu.L.Justin@gmail.com',
     name: 'Justin L. Espiritu',
+    picture: '',
   },
   home: {
-
-    // title: 'Developer | Gamer | Rockclimber',
+    // TODO:  Will have these be links once I get more content
     titles: [
       { title: 'Developer', class: 'element--hover-blue' },
       { title: 'Gamer', class: 'element--hover-red' },
@@ -14,15 +14,22 @@ export const UserConfig = {
     ]
   },
   about: {
-    welcomeMsg: 'Hey There!',
+    welcomeMsg: 'About me',
     longDescription: [
-      'My name is Justin, but most people call me Juice.  I am a software developer who specializes in creating web applications.',
+      'I am a software developer who specializes in creating web applications.',
+      'Problem solving is my passion.  Whether it is finding the best way to implement code or figuring out how to top a difficult boulder, I always love the challenge and discovering new solutions.',
       'On my freetime I love to continue improving my rockclimbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
     ],
+    developer: '',
+    gamer: '',
+    rockclimbing: ''
   },
   overview: {
     location: 'Oshkosh, WI',
-    job: 'Teamcneter Inplmenetation Engineer @ Mercury Marine'
+    job: 'Teamcenter Implmenetation Engineer @ Mercury Marine'
+  },
+  portfolio: {
+
   },
   social: [
     { title: 'Github', url: 'https://github.com/juicyjuice1100/', icon: 'fab fa-github fa-2x', class: 'element--hover-green'},

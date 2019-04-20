@@ -30,15 +30,30 @@
   background-color: whitesmoke;
 }
 
+// ****************************************************************************
+// Nav Animations
+// ****************************************************************************
 #button--nav-home {
-  &:hover{
+  &:hover {
     color: map-get($primary, 1);
   }
 }
 
 #button--nav-about {
-  &:hover{
+  &:hover {
     color: map-get($primary, 2);
+  }
+}
+
+#button--nav-portfolio {
+  &:hover {
+    color: map-get($primary, 3);
+  }
+}
+
+#button--nav-contact {
+  &:hover {
+    color: map-get($primary, 4);
   }
 }
 

@@ -12,19 +12,9 @@ export class FooterComponent implements OnInit {
   social: Array<any>;
 
   constructor() {
-    this.name = UserConfig.home.name;
-    this.email = UserConfig.about.email;
+    this.name = UserConfig.info.name;
+    this.email = UserConfig.info.email;
     this.social = UserConfig.social;
-  }
-
-  @HostListener ('mouseenter')
-  onMouseEnter() {
-    // TODO: animate showing email address
-  }
-
-  @HostListener ('mouseleave')
-  onmouseleave() {
-    // TODO:  animate hiding email address
   }
 
   ngOnInit() {
