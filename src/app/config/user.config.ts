@@ -12,9 +12,9 @@ export const UserConfig = {
   home: {
     // TODO:  Will have these be links once I get more content
     titles: [
-      { title: 'Developer', class: 'element--hover-blue' },
-      { title: 'Gamer', class: 'element--hover-red' },
-      { title: 'Rock Climber', class: 'element--hover-yellow' }
+      { title: 'Developer', class: 'element--hover-blue', description: 'testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest' },
+      { title: 'Gamer', class: 'element--hover-red', description: '' },
+      { title: 'Rock Climber', class: 'element--hover-yellow', description: '' }
     ]
   },
   about: {
@@ -24,11 +24,11 @@ export const UserConfig = {
       'Problem solving is my passion.  Whether it is finding the best way to implement code or figuring out how to top a difficult boulder, I always love the challenge and discovering new solutions.',
       'On my freetime I love to continue improving my rock climbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
     ],
-    subCategories: [
-      { title: 'Developer', description: ''},
-      { title: 'Gamer', description: ''},
-      { title: 'Rock Climber', description: ''}
-    ]
+    // subCategories: [
+    //   { title: 'Developer', description: ''},
+    //   { title: 'Gamer', description: ''},
+    //   { title: 'Rock Climber', description: ''}
+    // ]
   },
   overview: {
     location: 'Oshkosh, WI',

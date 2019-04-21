@@ -20,7 +20,13 @@ export const AppRoutes: Routes = [
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
+    children: [
+      {
+        path: ':id',
+        component: AboutComponent
+      }
+    ]
   },
   {
     path: 'resume',

@@ -1,9 +1,13 @@
 <app-navigation></app-navigation>
 <div class="container container--row">
-  <div class="container--column">
+  <div class="container container--column">
       <h1 class="heading--title">{{welcomeMsg}}</h1>
       <div *ngFor="let p of longDescription"> <!-- TODO:  Create main view bio-->
         <p>{{p}}</p> <!-- TODO:  Create biography.  This will be injected-->
+      </div>
+      <div *ngFor="let s of subCategories">
+        <h2 [id]="s.title" class="heading--subCategories">{{s.title}}</h2>
+        <p>{{s.description}}</p>
       </div>
   </div>
   <div class="container--column">

@@ -5,7 +5,7 @@
       <a class="name--hover-underline element--hover-green" routerLink="/about">{{name}}</a>
     </h1>
     <div class="home--titles" *ngFor="let t of titles">
-      <a [class]="t.class" routerLink="/about">{{t.title}}</a>
+      <a [class]="t.class" [routerLink]="['/about', t.title]">{{t.title}}</a>
     </div>
 </div>
 <app-footer></app-footer>

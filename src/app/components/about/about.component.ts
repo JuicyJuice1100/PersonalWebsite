@@ -10,12 +10,19 @@ import { DocumentRefService } from '../../services/documentRef.service';
 })
 
 export class AboutComponent implements OnInit {
-  public welcomeMsg: String = UserConfig.about.welcomeMsg;
-  public longDescription: Array<String> = UserConfig.about.longDescription;
-  public email: String = UserConfig.info.email;
-  public social: Array<Object> = UserConfig.social;
+  public welcomeMsg: String;
+  public longDescription: Array<String>;
+  public email: String;
+  public social: Array<any>;
+  public subCategories: Array<any>;
 
-  constructor(private titleService: Title, private docRef: DocumentRefService) { }
+  constructor(private titleService: Title, private docRef: DocumentRefService) {
+    this.welcomeMsg = UserConfig.about.welcomeMsg;
+    this.longDescription = UserConfig.about.longDescription;
+    this.email = UserConfig.info.email;
+    this.social = UserConfig.social;
+    this.subCategories = UserConfig.home.titles;
+  }
 
   ngOnInit() {
     this.titleService.setTitle('About - Justin L. Espiritu');
