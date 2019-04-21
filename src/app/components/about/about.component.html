@@ -1,14 +1,28 @@
 <app-navigation></app-navigation>
 <div class="container container--row">
   <div class="container container--column">
-      <h1 class="heading--title element--hover-green">{{welcomeMsg}}</h1>
-      <div *ngFor="let p of longDescription"> <!-- TODO:  Create main view bio-->
-        <p>{{p}}</p> <!-- TODO:  Create biography.  This will be injected-->
+      <h1 class="heading--title element--green">{{welcomeMsg}}</h1>
+      <div *ngFor="let p of longDescription">
+        <p>{{p}}</p> <!--This will be injected-->
       </div>
       <div *ngFor="let s of subCategories">
-          <h2 [id]="s.title" [class]="s.class">{{s.title}}</h2>
+          <h2 [id]="s.title" [class]="s.aboutClass">{{s.title}}</h2>
           <p>{{s.description}}</p>
-          <a mat-stroked-button class="element--hover-blue" *ngIf="s.title === 'Developer'" routerLink="/resume">My Resume</a>
+          <!-- TODO:  Clean this up, using an ngIf is sloppy.  Make this more dynamic without conditioonal statements.-->
+          <div *ngIf="s.title === 'Developer'">
+              <a mat-stroked-button class="element--hover-blue"  routerLink="/resume">My Resume</a>
+              <a class="icon--link" title="github" href="https://github.com/juicyjuice1100/">
+                  <i class="fab fa-github element--hover-green"></i>
+              </a>
+          </div>
+          <div *ngIf="s.title === 'Gamer'">
+              <a class="icon--link" title="steam" href="https://steamcommunity.com/id/juicyjuice1100/">
+                  <i class="fab fa-steam-symbol element--hover-yellow"></i>
+              </a>
+              <a class="icon--link" title="twitch" href="https://www.twitch.tv/juicyjuice0011">
+                <i class="fab fa-twitch element--hover-red"></i>
+            </a>
+          </div>
       </div>
   </div>
   <div class="container--column">
