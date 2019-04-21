@@ -3,7 +3,11 @@ export const UserConfig = {
   info: {
     email: 'Espiritu.L.Justin@gmail.com',
     name: 'Justin L. Espiritu',
-    picture: '',
+    picture: {
+      class: 'overview--profile',
+      src: '/assets/images/profile.jpg',
+      alt: name
+    }
   },
   home: {
     // TODO:  Will have these be links once I get more content
@@ -26,7 +30,10 @@ export const UserConfig = {
   },
   overview: {
     location: 'Oshkosh, WI',
-    job: 'Teamcenter Implmenetation Engineer @ Mercury Marine'
+    job: {
+      title: 'Teamcenter Implementations Engineer',
+      company: 'Mercury Digital Services'
+    }
   },
   portfolio: {
 

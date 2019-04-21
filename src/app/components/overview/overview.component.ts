@@ -7,12 +7,14 @@ import { UserConfig } from '../../config/user.config';
   styleUrls: ['./overview.component.scss']
 })
 export class OverviewComponent implements OnInit {
+  profile: any;
   name: String;
   email: String;
   location: String;
-  job: String;
+  job: any;
 
   constructor() {
+    this.profile = UserConfig.info.picture;
     this.name = UserConfig.info.name;
     this.email = UserConfig.info.email;
     this.location = UserConfig.overview.location;
