@@ -18,15 +18,17 @@ export const UserConfig = {
     ]
   },
   about: {
-    welcomeMsg: 'About me',
+    welcomeMsg: 'Let Me Introduce Myself',
     longDescription: [
-      'I am a software developer who specializes in creating web applications.',
+      'My name is Justin, but most people call me Juice.',
       'Problem solving is my passion.  Whether it is finding the best way to implement code or figuring out how to top a difficult boulder, I always love the challenge and discovering new solutions.',
-      'On my freetime I love to continue improving my rockclimbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
+      'On my freetime I love to continue improving my rock climbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
     ],
-    developer: '',
-    gamer: '',
-    rockclimbing: ''
+    subCategories: [
+      { title: 'Developer', description: ''},
+      { title: 'Gamer', description: ''},
+      { title: 'Rock Climber', description: ''}
+    ]
   },
   overview: {
     location: 'Oshkosh, WI',
@@ -41,6 +43,7 @@ export const UserConfig = {
   social: [
     { title: 'Github', url: 'https://github.com/juicyjuice1100/', icon: 'fab fa-github fa-2x', class: 'element--hover-green'},
     { title: 'LinkedIn', url: 'https://www.linkedin.com/in/justin-espiritu-b4a277138/', icon: 'fab fa-linkedin-in fa-2x', class: 'element--hover-blue'},
-    { title: 'Steam', url: 'https://steamcommunity.com/id/juicyjuice1100/', icon: 'fab fa-steam-symbol fa-2x', class: 'element--hover-yellow'}
+    { title: 'Steam', url: 'https://steamcommunity.com/id/juicyjuice1100/', icon: 'fab fa-steam-symbol fa-2x', class: 'element--hover-yellow'},
+    { title: 'Twitch', url: 'https://www.twitch.tv/juicyjuice0011', icon: 'fab fa-twitch fa-2x', class: 'element--hover-red'}
   ]
 };
