@@ -12,33 +12,12 @@
   flex-direction: column;
   justify-content: center;
   color: $dark-gray;
-  cursor: default;
-}
-
-.title--hover-green {
-  transition: $defaultTransition;
-  &:hover {
-    color: map-get($primary, 2);
-  }
-}
-
-.title--hover-red {
-  transition: $defaultTransition;
-  &:hover {
-    color: map-get($primary, 1);
-  }
-}
-
-.title--hover-yellow {
-  transition: $defaultTransition;
-  &:hover {
-    color: map-get($primary, 4);
-  }
 }
 
 .name--hover-underline {
   position: relative;
   text-decoration: none;
+  color: $dark-gray;
   &:before {
     content: "";
     position: absolute;

@@ -1,11 +1,11 @@
 <app-navigation></app-navigation>
 <div class="container container--routing-home">
     <!-- <p id="welcomeMsg">{{welcomeMsg}}</p> -->
-    <h1 class="element--hover-green">
-      <a class="name--hover-underline">{{name}}</a>
+    <h1>
+      <a class="name--hover-underline element--hover-green" routerLink="/about">{{name}}</a>
     </h1>
-    <div *ngFor="let t of titles">
-      <span [class]="t.class">{{t.title}}</span>
+    <div class="home--titles" *ngFor="let t of titles">
+      <a [class]="t.class" routerLink="/about">{{t.title}}</a>
     </div>
 </div>
 <app-footer></app-footer>

@@ -1,0 +1,12 @@
+// ****************************************************************************
+// Local styles
+// ****************************************************************************
+@import '../../../style-helpers/animation';
+@import '../../../style-helpers/colors';
+@import '../../../style-helpers/fonts';
+@import '../../../style-helpers/viewportHelper';
+
+.iframe--resume {
+  width: 100%;
+  height: 500px;
+}

@@ -26,6 +26,26 @@ body {
 }
 
 // ****************************************************************************
+// Global Links
+// ****************************************************************************
+a {
+  color: unset;
+  text-decoration: none;
+  // :link {
+  //   color: unset;
+  // }
+  // :visited {
+  //   color: unset;
+  // }
+  // :hover {
+  //   color: unset;
+  // }
+  // :active {
+  //   color: unset;
+  // }
+}
+
+// ****************************************************************************
 // Scrollbar
 // ****************************************************************************
 /* width */
@@ -38,35 +58,37 @@ body {
 // ****************************************************************************
 
 .element--hover-green {
-  transition: $defaultTransition;
+  transition: $defaultTransition !important;
   &:hover {
-    color: map-get($primary, 2);
+    color: map-get($primary, 2) !important;
   }
 }
 
 .element--hover-red {
-  transition: $defaultTransition;
+  transition: $defaultTransition !important;
   &:hover {
-    color: map-get($primary, 1);
+    color: map-get($primary, 1) !important;
   }
 }
 
 .element--hover-blue {
-  transition: $defaultTransition;
+  transition: $defaultTransition !important;
   &:hover {
-    color: map-get($primary, 3);
+    color: map-get($primary, 3) !important;
   }
 }
 
 .element--hover-yellow {
-  transition: $defaultTransition;
+  transition: $defaultTransition !important;
   &:hover {
-    color: map-get($primary, 4);
+    color: map-get($primary, 4) !important;
   }
 }
 
 .element--hover-grow {
-  transition: $defaultTransition;
-    &:hover { transform: scale(1.1); }
+  transition: $defaultTransition !important;
+    &:hover {
+      transform: scale(1.1) !important;
+    }
 }
 
