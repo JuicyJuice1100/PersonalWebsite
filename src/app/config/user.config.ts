@@ -12,9 +12,15 @@ export const UserConfig = {
   home: {
     // TODO:  Will have these be links once I get more content
     titles: [
-      { title: 'Developer', class: 'element--hover-blue', description: 'testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest testtesttesttesttesttesttesttesttesttesttest' },
-      { title: 'Gamer', class: 'element--hover-red', description: '' },
-      { title: 'Rock Climber', class: 'element--hover-yellow', description: '' }
+      { title: 'Developer', class: 'heading--title element--hover-blue',
+        description: 'I enjoy developing web applications and learning new technology to further my knowledge as a developer.  Checkout my past projects and experience by clicking the button below or the resume tab above.'
+      },
+      { title: 'Gamer', class: 'heading--title element--hover-red',
+        description: ['']
+      },
+      { title: 'Rock Climber', class: 'heading--title element--hover-yellow',
+        description: ['']
+      }
     ]
   },
   about: {

@@ -1,13 +1,14 @@
 <app-navigation></app-navigation>
 <div class="container container--row">
   <div class="container container--column">
-      <h1 class="heading--title">{{welcomeMsg}}</h1>
+      <h1 class="heading--title element--hover-green">{{welcomeMsg}}</h1>
       <div *ngFor="let p of longDescription"> <!-- TODO:  Create main view bio-->
         <p>{{p}}</p> <!-- TODO:  Create biography.  This will be injected-->
       </div>
       <div *ngFor="let s of subCategories">
-        <h2 [id]="s.title" class="heading--subCategories">{{s.title}}</h2>
-        <p>{{s.description}}</p>
+          <h2 [id]="s.title" [class]="s.class">{{s.title}}</h2>
+          <p>{{s.description}}</p>
+          <a mat-stroked-button class="element--hover-blue" *ngIf="s.title === 'Developer'" routerLink="/resume">My Resume</a>
       </div>
   </div>
   <div class="container--column">
