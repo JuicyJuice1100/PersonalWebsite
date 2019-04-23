@@ -19,7 +19,7 @@ export const UserConfig = {
         description: 'I am competative by nature and a hardcore gamer at heart. My favorite genres are fighting games, horror survival, and souls-bourne.  Feel free to add me on steam or check out my twitch channel via the links below.'
       },
       { title: 'Rock Climber', class: 'heading--title element--hover-yellow', aboutClass: 'heading--title element--yellow',
-        description: ''
+        description: 'I have only been climbing for about half a year, but I fell in love with it the moment I climbed my first route.  Every route is like a puzzle that I need to solve.  If you ever want to talk about rock climbing or interested in climbing feel free to shoot me a message'
       }
     ]
   },
@@ -28,7 +28,7 @@ export const UserConfig = {
     longDescription: [
       'My name is Justin, but most people call me Juice.',
       'Problem solving is my passion.  Whether it is finding the best way to implement code or figuring out how to top a difficult boulder, I always love the challenge and discovering new solutions.',
-      'On my freetime I love to continue improving my rock climbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
+      'On my free time I love to continue improving my rock climbing skills and solving boulder problems.  I also enjoy playing video games with friends and occasionally traveling to compete in local video game tournaments.',
     ],
     // subCategories: [
     //   { title: 'Developer', description: ''},
