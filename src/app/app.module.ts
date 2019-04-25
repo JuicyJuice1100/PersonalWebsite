@@ -17,7 +17,7 @@ import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/resume/resume.component';
 
-import { DocumentRefService } from './services/documentRef.service';
+import { DocumentRefService } from './services/documentRef/documentRef.service';
 
 
 @NgModule({

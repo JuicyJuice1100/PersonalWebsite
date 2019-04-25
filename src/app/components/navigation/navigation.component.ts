@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { DocumentRefService } from '../../services/documentRef.service';
+import { DocumentRefService } from '../../services/documentRef/documentRef.service';
 import { NavigationItem } from '../../classes/navigation-item';
 import { NavigationConfig } from '../../config/navigation.config';
 

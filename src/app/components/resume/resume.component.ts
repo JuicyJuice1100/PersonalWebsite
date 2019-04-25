@@ -10,7 +10,7 @@ export class ResumeComponent implements OnInit {
   resume: String;
 
   constructor() {
-    this.resume = UserConfig.resume;
+    this.resume = UserConfig.resume.url;
   }
 
   ngOnInit() {

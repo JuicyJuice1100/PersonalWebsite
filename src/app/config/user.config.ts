@@ -43,7 +43,10 @@ export const UserConfig = {
       company: 'Mercury Digital Services'
     }
   },
-  resume:  '/assets/files/Latex CS Resume 2019-04-11.pdf',
+  resume:  {
+    title: 'resume',
+    url: '/assets/files/Latex CS Resume 2019-04-11.pdf',
+  },
   portfolio: {
 
   },

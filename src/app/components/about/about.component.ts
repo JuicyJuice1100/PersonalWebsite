@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { UserConfig } from '../../config/user.config';
-import { DocumentRefService } from '../../services/documentRef.service';
+import { DocumentRefService } from '../../services/documentRef/documentRef.service';
 
 @Component({
   selector: 'app-about',
