@@ -16,8 +16,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { EmbededResumeComponent } from './components/resume/embededResume/embededResume.component';
 
 import { DocumentRefService } from './services/documentRef/documentRef.service';
+
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { DocumentRefService } from './services/documentRef/documentRef.service';
       ContactComponent,
       FooterComponent,
       OverviewComponent,
-      ResumeComponent
+      ResumeComponent,
+      EmbededResumeComponent
    ],
    imports: [
       BrowserModule,

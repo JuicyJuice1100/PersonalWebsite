@@ -7,10 +7,10 @@ import { UserConfig } from '../../config/user.config';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
-  resume: String;
+  resume: any;
 
   constructor() {
-    this.resume = UserConfig.resume.url;
+    this.resume = UserConfig.resume;
   }
 
   ngOnInit() {
