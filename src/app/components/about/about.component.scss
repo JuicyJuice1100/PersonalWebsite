@@ -1,0 +1,28 @@
+// ****************************************************************************
+// Local styles
+// ****************************************************************************
+@import '../../../style-helpers/animation';
+@import '../../../style-helpers/colors';
+@import '../../../style-helpers/fonts';
+@import '../../../style-helpers/viewportHelper';
+
+.container--row {
+  font-size: $font-size--large;
+  display: flex;
+  justify-content: center;
+  color: $dark-gray;
+  cursor: default;
+}
+
+.container--column {
+  display: flex;
+  flex-direction: column;
+  &:first-child {
+    max-width: 70%;
+    border-right: 1px solid $dark-gray;
+  }
+}
+
+.heading--title {
+  border-bottom: 1px solid $dark-gray;
+}

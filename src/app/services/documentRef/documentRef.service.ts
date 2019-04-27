@@ -10,7 +10,7 @@ export class DocumentRefService {
     return this.document;
   }
 
-   get bodyWidth(): any {
-     return this.document.body.clientWidth;
-   }
+  get bodyWidth(): any {
+    return this.document.body.clientWidth;
+  }
 }

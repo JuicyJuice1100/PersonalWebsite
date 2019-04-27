@@ -1,29 +1,27 @@
 <!-- STATE: Navigation if the application is not mobile -->
-<span *ngIf="!displayMobileView">
-    <div id="navigation--toolbar-desktop" class="navigation--container-toolbar">
-      <div id="navigation--toolbar-list-desktop" *ngFor="let item of desktopNavigationItemList" class="desktop">
-        <a class="{{item.type}}" routerLink={{item.route}} routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:false}">
-          <span>{{item.title}}</span>
-        </a>
-      </div>
-    </div>
-  </span>
+<mat-toolbar *ngIf="!displayMobileView" class="container--routing-navigation">
+    <mat-toolbar-row class="container--toolbar">
+        <span *ngFor="let item of desktopNavigationItemList" class="element--hover-grow">
+            <a mat-button [id]="item.id" [routerLink]=item.route>{{item.title}}</a>
+        </span>
+        <span class="navigation--spacer"></span>
+        <!-- TODO:  Insert Theme change -->
+    </mat-toolbar-row>
+</mat-toolbar>
 
-  <!-- STATE: Navigation if the application is mobile -->
-  <span *ngIf="displayMobileView">
-    <div id="navigation--toolbar-mobile" class="navigation--container-toolbar">
-      <div id="navigation--toolbar-list-mobile" *ngFor="let item of mobileNavigationItemList" class="mobile">
-        <a class="{{item.type}}" routerLink={{item.route}} routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:false}">
-          <span>{{item.title}}</span>
-        </a>
-      </div>
-    </div>
 
-    <div id="navigation--tab-bar" class="navigation--container-tab-bar">
-      <div id="navigation--tab-bar-list" *ngFor="let item of desktopNavigationItemList" class="nav-item">
-        <a class="{{item.type}}" title="{{item.title}}" routerLink={{item.route}} routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:false}">
-          <i class="fa fa-{{item.icon}}" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-  </span>
+
+<!-- STATE: Navigation if the application is mobile -->
+<!-- <span *ngIf="displayMobileView">
+  <div id="navigationToolbarMobile" class="navigationContainerToolbar">
+    <mat-toolbar id="navigationToolbarListMobile" class="mobile" id="navigationToolbarListDesktop" color="primary" class="mat-elevation-z6">
+        <a mat-button class="{{item.type}}" routerLink={{item.route}}>{{item.title}}</a>
+    </mat-toolbar>
+  </div>
+
+  <div id="navigationTabBar" class="navigationContainerTabBar">
+    <mat-toolbar id="navigationToolbarList" class="navItem" *ngFor="let item of desktopNavigationItemList">
+        <a mat-button class="{{item.type}}" routerLink={{item.route}}>{{item.title}}</a>
+    </mat-toolbar>
+  </div>
+</span> -->

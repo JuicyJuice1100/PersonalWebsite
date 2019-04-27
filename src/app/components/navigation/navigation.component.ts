@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { DocumentRefService } from '../../services/documentRef.service';
+import { DocumentRefService } from '../../services/documentRef/documentRef.service';
 import { NavigationItem } from '../../classes/navigation-item';
 import { NavigationConfig } from '../../config/navigation.config';
 
@@ -16,41 +16,41 @@ export class NavigationComponent {
   private breakpoint = 960;
 
   constructor(private docRef: DocumentRefService) {
-    this.mobileNavigationItemList = this.getMobileNavigationItemList(NavigationConfig);
-    this.displayMobileView = this.displayMobile(this.docRef.bodyWidth);
+    // this.mobileNavigationItemList = this.getMobileNavigationItemList(NavigationConfig);
+    // this.displayMobileView = this.displayMobile(this.docRef.bodyWidth);
   }
 
-  /**
-   * When the window is scaled update the view.
-   * @param event window resize event
-   */
-  @HostListener('window:resize', ['$event'])
-  resize(event): void {
-    if (event && event.target) {
-      this.displayMobileView = this.displayMobile(event.target.innerWidth);
-    }
-  }
+//   /**
+//    * When the window is scaled update the view.
+//    * @param event window resize event
+//    */
+//   @HostListener('window:resize', ['$event'])
+//   resize(event): void {
+//     if (event && event.target) {
+//       this.displayMobileView = this.displayMobile(event.target.innerWidth);
+//     }
+//   }
 
-  /**
-   * Search through an Array of NavigationItems for what should be displayed on the mobile UI
-   * @param navItems Array of NavigationItems to search through
-   */
-  public getMobileNavigationItemList(navItems: Array<NavigationItem>): Array<NavigationItem> {
-    const nav: Array<NavigationItem> = [];
-    if (navItems) {
-      navItems.forEach(element => {
-        if (element.isMobile) { nav.push(element); }
-      });
-    }
-    return nav;
-  }
+//   /**
+//    * Search through an Array of NavigationItems for what should be displayed on the mobile UI
+//    * @param navItems Array of NavigationItems to search through
+//    */
+//   public getMobileNavigationItemList(navItems: Array<NavigationItem>): Array<NavigationItem> {
+//     const nav: Array<NavigationItem> = [];
+//     if (navItems) {
+//       navItems.forEach(element => {
+//         if (element.isMobile) { nav.push(element); }
+//       });
+//     }
+//     return nav;
+//   }
 
-  /**
-   * Check to see if the mobile UI should be displayed.
-   * @param width current width of the screen
-   */
-  public displayMobile(width: number): Boolean {
-    if (width <= this.breakpoint) { return true; }
-    return false;
-  }
+//   /**
+//    * Check to see if the mobile UI should be displayed.
+//    * @param width current width of the screen
+//    */
+//   public displayMobile(width: number): Boolean {
+//     if (width <= this.breakpoint) { return true; }
+//     return false;
+//   }
 }

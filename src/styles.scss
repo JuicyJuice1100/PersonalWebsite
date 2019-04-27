@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+// ****************************************************************************
+// Local styles
+// ****************************************************************************
+@import './style-helpers/animation';
+@import './style-helpers/colors';
+@import './style-helpers/fonts';
+@import './style-helpers/viewportHelper';
+
+.container {
+  padding-top: calc(#{$navbar--height} + #{$toolbar--height} + 0px);
+  max-width: 3000px;
+  // min-height == [window height - (padding-top + padding-bottom) - toolbar-height - (extra padding + footer padding) - footer height]
+  min-height: calc(100vh - (2*#{$navbar--height}) - #{$toolbar--height} - (2*30px) - #{$footer--height});
+  padding-right: $container--padding-right;
+  padding-left: $container--padding-left;
+  padding-bottom: $navbar--height;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+body {
+  background-color: whitesmoke
+  -webkit-scrollbar { width: 0 !important }
+}
+
+// ****************************************************************************
+// Global Links
+// ****************************************************************************
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.icon--link {
+  margin: 8px;
+  color: $dark-gray;
+}
+
+// ****************************************************************************
+// Scrollbar
+// ****************************************************************************
+/* width */
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+// ****************************************************************************
+// Global Color
+// ****************************************************************************
+.element--red {
+  color: map-get($primary, 1);
+}
+
+.element--green {
+  color: map-get($primary, 2);
+}
+
+.element--blue {
+  color: map-get($primary, 3);
+}
+
+.element--yellow {
+  color: map-get($primary, 4);
+}
+
+// ****************************************************************************
+// Global Hover Animations
+// ****************************************************************************
+
+.element--hover-green {
+  transition: $defaultTransition !important;
+  &:hover {
+    color: map-get($primary, 2) !important;
+  }
+}
+
+.element--hover-red {
+  transition: $defaultTransition !important;
+  &:hover {
+    color: map-get($primary, 1) !important;
+  }
+}
+
+.element--hover-blue {
+  transition: $defaultTransition !important;
+  &:hover {
+    color: map-get($primary, 3) !important;
+  }
+}
+
+.element--hover-yellow {
+  transition: $defaultTransition !important;
+  &:hover {
+    color: map-get($primary, 4) !important;
+  }
+}
+
+.element--hover-grow {
+  transition: $defaultTransition !important;
+    &:hover {
+      transform: scale(1.1) !important;
+    }
+}
+

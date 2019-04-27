@@ -1,0 +1,13 @@
+<div class="container--footer">
+  <mat-toolbar-row class="footer--toolbar">
+    <a class="footer--link" href="mailto:{{email}}">
+      <i class="fa fa-envelope fa-2x element--hover-red"></i>
+    </a>
+    <span class="footer--spacer"></span>
+    <span *ngFor="let s of social">
+      <a class="icon--link" [title]="s.title" [href]="s.url">
+        <i [class]="s.icon + ' ' + s.class"></i>
+      </a>
+    </span>
+  </mat-toolbar-row>
+</div>
