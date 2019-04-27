@@ -16,9 +16,10 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { EmbededResumeComponent } from './components/resume/embededResume/embededResume.component';
+import { EmbededResumeComponent } from './components/resume/embeded-resume/embeded-resume.component';
 
 import { DocumentRefService } from './services/documentRef/documentRef.service';
+
 
 
 

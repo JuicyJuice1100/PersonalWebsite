@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { EmbededResumeComponent } from './embededResume.component';
+import { EmbededResumeComponent } from './embeded-resume.component';
 
 describe('EmbededResumeComponent', () => {
   let component: EmbededResumeComponent;
