@@ -17,11 +17,16 @@ import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { EmbededResumeComponent } from './components/resume/embeded-resume/embeded-resume.component';
+import { ResumeHeaderComponent } from './components/resume/embeded-resume/resume-header/resume-header.component';
+import { ResumeEducationComponent } from './components/resume/embeded-resume/resume-education/resume-education.component';
+import { ResumeExperienceComponent } from './components/resume/embeded-resume/resume-experience/resume-experience.component';
+import { ResumeProjectsComponent } from './components/resume/embeded-resume/resume-projects/resume-projects.component';
+// tslint:disable-next-line: max-line-length
+import { ProjectsPersonalComponent } from './components/resume/embeded-resume/resume-projects/projects-personal/projects-personal.component';
+// tslint:disable-next-line: max-line-length
+import { ProjectsProfessionalComponent } from './components/resume/embeded-resume/resume-projects/projects-professional/projects-professional.component';
 
 import { DocumentRefService } from './services/documentRef/documentRef.service';
-
-
-
 
 @NgModule({
    declarations: [
@@ -34,7 +39,13 @@ import { DocumentRefService } from './services/documentRef/documentRef.service';
       FooterComponent,
       OverviewComponent,
       ResumeComponent,
-      EmbededResumeComponent
+      EmbededResumeComponent,
+      ResumeHeaderComponent,
+      ResumeEducationComponent,
+      ResumeExperienceComponent,
+      ResumeProjectsComponent,
+      ProjectsPersonalComponent,
+      ProjectsProfessionalComponent
    ],
    imports: [
       BrowserModule,
